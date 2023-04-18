@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alura Challenge 1 - Encriptador de texto</title>
+</head>
+<body>
+    
+    <main>
+        <nav><img src="Logo.png" alt="logo"></nav>
+        <div class="contenido">
+            <h1>Alura Challenge 1 - Encriptador de texto</h1>
+            <textarea placeholder="Ingresa un texto aqui" id="textarea"></textarea>
+            <div class="buttons">
+                <button onclick="encriptar()" class="btn-encriptar">Encriptar</button>
+                <button onclick="desencriptar()" class="btn-desencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <div  class="contenido-encriptado">
+            <textarea readonly="readonly" id="texto-encriptado">
+            </textarea>
+            <div class="buttons">
+                <button onclick="limpiar()" id="btn-limpiar">Limpiar</button>
+                <button onclick="copiar()" id="btn-copiar">Copiar</button>
+            </div>
+            <div id="card-contenido">
+                <img src="Muñeco.png" alt="No hay contenido">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+            <ul>
+                <li><a href="mailto:zarateagustin3@gmail.com">Email</a></li>
+                <li><a href="https://www.linkedin.com/agustinzarate">LinkeIn</a></li>
+                <li><a href="https://github.com/AgustinZarate">Github</a></li>
+                <li>
+                <p>👋</p>
+              </li>
+            </ul>
+          
+    </footer>
+    
+    <script src="encriptador.js"></script> 
+</body>
+</html>
