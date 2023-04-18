@@ -49,6 +49,11 @@ button {
 
 .btn-encriptar, .btn-desencriptar, #btn-limpiar, #btn-copiar {
   width: 100%;
+  transition: all 1s;
+}
+
+.btn-encriptar:hover,.btn-desencriptar:hover, #btn-limpiar:hover, #btn-copiar:hover {
+  transform: scale(1.1);
 }
 
 .btn-encriptar, #btn-copiar {
