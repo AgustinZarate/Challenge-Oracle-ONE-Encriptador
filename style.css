@@ -27,7 +27,7 @@ h1 {
   outline: none;
   font-size: 2.5rem;
   resize: none;
-  padding: 20px;
+  padding: 20px 0 0;
   color: #0A3871;
 }
 
@@ -37,7 +37,7 @@ h1 {
 
 button {
   margin: 10px;
-  padding: 24px;
+  padding: 15px;
   cursor: pointer;
   font-size: 16px;
 }
@@ -45,6 +45,7 @@ button {
 .buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .btn-encriptar, .btn-desencriptar, #btn-limpiar, #btn-copiar {
@@ -186,4 +187,33 @@ li:hover ~ li p {
   75% {
     transform: rotate(-15deg);
   }
+}
+
+#btn-copiar.completado::after {
+  content: "\2714";
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#btn-copiar.completado {
+  background-color: green;
+  border-radius: 50%;
+  width: 60px;
+  height: 50px;
+  padding: 0;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.limpiar-encriptador {
+  border: .5px solid #052051;
+  color: white;
+  background: #757FB2;
+  font-size: 13px;
+  border-radius: 24px;
+  margin: 0 0 5px;
+  padding: 5px;
 }
